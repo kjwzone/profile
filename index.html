@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김종우 | AI·산업공학·금융 포트폴리오</title>
+    <meta
+      name="description"
+      content="산업공학, AI 비즈니스, 정책금융을 아우르는 김종우 CTO·컨설턴트 포트폴리오"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              slateDark: "#0f172a",
+              electricBlue: "#2563eb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slateDark text-slate-100 antialiased">
+    <!-- Page Wrapper -->
+    <div class="min-h-screen flex flex-col">
+      <!-- Navbar -->
+      <header
+        class="sticky top-0 z-30 backdrop-blur bg-slateDark/80 border-b border-slate-800"
+      >
+        <nav
+          class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-electricBlue/10 border border-electricBlue/40 text-electricBlue font-semibold"
+            >
+              KJ
+            </span>
+            <div class="leading-tight">
+              <p class="font-semibold text-sm sm:text-base">
+                김종우
+                <span class="text-xs sm:text-sm text-slate-400 ml-1">
+                  CTO · 컨설턴트
+                </span>
+              </p>
+              <p class="text-xs text-slate-400">
+                AI 스마트공학 · 정책금융 · R&amp;D
+              </p>
+            </div>
+          </div>
+          <div class="hidden sm:flex gap-4 text-sm">
+            <button
+              class="nav-link text-slate-300 hover:text-electricBlue transition-colors"
+              data-target="hero"
+            >
+              소개
+            </button>
+            <button
+              class="nav-link text-slate-300 hover:text-electricBlue transition-colors"
+              data-target="education"
+            >
+              학력
+            </button>
+            <button
+              class="nav-link text-slate-300 hover:text-electricBlue transition-colors"
+              data-target="experience"
+            >
+              경력
+            </button>
+            <button
+              class="nav-link text-slate-300 hover:text-electricBlue transition-colors"
+              data-target="skills"
+            >
+              역량
+            </button>
+            <button
+              class="nav-link text-slate-300 hover:text-electricBlue transition-colors"
+              data-target="contact"
+            >
+              연락처
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <section
+          id="hero"
+          class="relative overflow-hidden border-b border-slate-800"
+        >
+          <div
+            class="pointer-events-none absolute -top-40 right-0 h-80 w-80 rounded-full bg-electricBlue/20 blur-3xl"
+          ></div>
+          <div class="max-w-5xl mx-auto px-4 pt-14 pb-16 sm:pt-20 sm:pb-20">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+              <div class="space-y-6">
+                <p
+                  class="inline-flex items-center gap-1 rounded-full border border-electricBlue/30 bg-electricBlue/10 px-3 py-1 text-xs font-medium text-electricBlue"
+                >
+                  산업공학 × AI 비즈니스 × 정책금융
+                </p>
+                <h1
+                  class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+                >
+                  산업공학의 효율성 위에서<br />
+                  AI 비즈니스의 미래를 설계합니다.
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base max-w-xl">
+                  제조 현장의 공정 개선부터 정책금융 컨설팅, AI 기반 비즈니스
+                  전략까지. 전통 산업과 미래 기술을 연결하는
+                  <span class="font-semibold text-electricBlue"
+                    >전략적 CTO 겸 컨설턴트</span
+                  >로서 기업의 성장을 설계합니다.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                  <button
+                    class="primary-scroll-btn inline-flex items-center gap-2 rounded-xl bg-electricBlue px-4 py-2 text-sm font-medium text-white shadow-lg shadow-electricBlue/40 hover:bg-electricBlue/90 transition-colors"
+                    data-target="experience"
+                  >
+                    주요 경력 보기
+                    <span aria-hidden="true">↓</span>
+                  </button>
+                  <button
+                    class="secondary-scroll-btn inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-900/40 px-4 py-2 text-sm font-medium text-slate-100 hover:border-electricBlue/60 hover:text-electricBlue transition-colors"
+                    data-target="contact"
+                  >
+                    협업 문의
+                  </button>
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-3 sm:grid-cols-4 text-xs text-slate-300"
+                >
+                  <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-3">
+                    <p class="font-semibold text-sm text-slate-100">
+                      제조/기술
+                    </p>
+                    <p class="mt-1">기아자동차 · 유림산전 CTO</p>
+                  </div>
+                  <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-3">
+                    <p class="font-semibold text-sm text-slate-100">
+                      금융/전략
+                    </p>
+                    <p class="mt-1">ING LIFE · iFA 본부장</p>
+                  </div>
+                  <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-3">
+                    <p class="font-semibold text-sm text-slate-100">
+                      컨설팅
+                    </p>
+                    <p class="mt-1">정책자금 · 창업 지원</p>
+                  </div>
+                  <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-3">
+                    <p class="font-semibold text-sm text-slate-100">
+                      교육/연구
+                    </p>
+                    <p class="mt-1">AI 스마트공학 박사과정</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bento-like summary panel -->
+              <aside class="space-y-4 md:space-y-5">
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 sm:p-5 shadow-[0_18px_60px_rgba(15,23,42,0.9)]"
+                >
+                  <p class="text-xs uppercase tracking-wide text-slate-400">
+                    현재 포지션
+                  </p>
+                  <ul class="mt-2 space-y-2.5 text-sm">
+                    <li class="flex gap-2">
+                      <span class="mt-1 h-1.5 w-1.5 rounded-full bg-electricBlue"></span>
+                      <div>
+                        <p class="font-medium">
+                          유림산전(주) CTO / 기업부설연구소장
+                        </p>
+                        <p class="text-xs text-slate-400">
+                          제조·자동화 공정, 금형 보호 및 공정 개선 R&amp;D
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                      <div>
+                        <p class="font-medium">
+                          (주)iFA 본부장 / 중소기업자금지원 심사평가단
+                        </p>
+                        <p class="text-xs text-slate-400">
+                          정책자금·투자 유치 전략 수립 및 심사
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="mt-1 h-1.5 w-1.5 rounded-full bg-amber-300"></span>
+                      <div>
+                        <p class="font-medium">
+                          한국열린사이버대학교 연구교수 · 한국AI전문가협회 교수위원
+                        </p>
+                        <p class="text-xs text-slate-400">
+                          AI 비즈니스·부동산 금융·기술경영 교육 및 연구
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="grid gap-3 sm:grid-cols-2 rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-950 p-4"
+                >
+                  <div class="space-y-1">
+                    <p class="text-xs text-slate-400">핵심 키워드</p>
+                    <p class="text-sm font-medium">
+                      AI 스마트공학<br />정책금융 컨설팅<br />기술경영(MOT)
+                    </p>
+                  </div>
+                  <div class="space-y-1">
+                    <p class="text-xs text-slate-400">기반 전공</p>
+                    <p class="text-sm font-medium">
+                      한양대 산업공학<br />AI 비즈니스 복수 석사<br />AI 스마트공학
+                      박사과정
+                    </p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section
+          id="education"
+          class="border-b border-slate-800 bg-slate-950/40"
+        >
+          <div class="max-w-5xl mx-auto px-4 py-12 sm:py-16">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <h2 class="text-xl sm:text-2xl font-semibold">
+                학문적 깊이 (Education)
+              </h2>
+              <p class="text-xs text-slate-400">
+                AI · 산업공학 · 비즈니스 융합
+              </p>
+            </div>
+            <div
+              class="grid gap-4 sm:grid-cols-3 text-sm auto-rows-fr"
+            >
+              <article
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 flex flex-col"
+              >
+                <p class="text-xs text-electricBlue font-semibold mb-1">
+                  박사 과정
+                </p>
+                <p class="font-medium">
+                  호서대학교 벤처대학원
+                  <br />
+                  AI스마트공학과
+                </p>
+                <p class="mt-2 text-xs text-slate-400">2026.02 ~ 재학 중</p>
+                <p class="mt-3 text-xs text-slate-300">
+                  제조 데이터와 AI를 결합한 스마트 공학, R&amp;D 전략 수립을
+                  중심으로 연구.
+                </p>
+              </article>
+              <article
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 flex flex-col"
+              >
+                <p class="text-xs text-electricBlue font-semibold mb-1">
+                  석사 학위
+                </p>
+                <p class="font-medium">
+                  서울미디어대학원대학교(SMIT)
+                  <br />
+                  AI비즈니스 &amp; 미디어비즈니스
+                </p>
+                <p class="mt-2 text-xs text-slate-400">
+                  공학석사 · 경영학석사 (복수전공)
+                </p>
+                <p class="mt-3 text-xs text-slate-300">
+                  AI 기반 신규 비즈니스 모델과 디지털 미디어 전략을 융합한
+                  실무 중심 연구.
+                </p>
+              </article>
+              <article
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 flex flex-col"
+              >
+                <p class="text-xs text-electricBlue font-semibold mb-1">
+                  학사 학위
+                </p>
+                <p class="font-medium">
+                  한양대학교
+                  <br />
+                  산업공학과
+                </p>
+                <p class="mt-2 text-xs text-slate-400">
+                  시스템 최적화 · 공정 설계 기반
+                </p>
+                <p class="mt-3 text-xs text-slate-300">
+                  제조·서비스 시스템의 효율화, 데이터 기반 의사결정의 공학적
+                  기반을 형성.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="border-b border-slate-800">
+          <div class="max-w-5xl mx-auto px-4 py-12 sm:py-16">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <h2 class="text-xl sm:text-2xl font-semibold">
+                경력의 확장성 (Experience)
+              </h2>
+              <p class="text-xs text-slate-400">
+                제조 · 금융 · 컨설팅 · 교육
+              </p>
+            </div>
+            <div
+              class="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:items-start"
+            >
+              <!-- Experience summary cards -->
+              <div class="space-y-4">
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4"
+                >
+                  <p class="text-xs text-slate-400 mb-1">제조 / 기술</p>
+                  <p class="font-medium text-sm">
+                    기아자동차 보상업무팀 (1996~2000)
+                    <br />
+                    유림산전 CTO (2021~현재)
+                  </p>
+                  <p class="mt-2 text-xs text-slate-300">
+                    자동차 제조 및 산업 자동화 현장에서 축적한 공정 개선, 품질
+                    관리, 금형 보호 기술 역량.
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4"
+                >
+                  <p class="text-xs text-slate-400 mb-1">금융 / 전략</p>
+                  <p class="font-medium text-sm">
+                    ING LIFE 부지점장 (2003~2014)
+                    <br />
+                    (주)iFA 본부장 (2014~현재)
+                  </p>
+                  <p class="mt-2 text-xs text-slate-300">
+                    중소·중견기업 정책자금, 투자 유치, 재무 설계를 통합한
+                    전략적 자금 운용 컨설팅.
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4"
+                >
+                  <p class="text-xs text-slate-400 mb-1">컨설팅 / 교육</p>
+                  <p class="font-medium text-sm">
+                    한국기술개발협회 선임전문위원
+                    <br />
+                    정책금융 및 창업지원사업 사내교수
+                  </p>
+                  <p class="mt-2 text-xs text-slate-300">
+                    R&amp;D 지원제도, 정책자금, 창업·스케일업 전략을 기업
+                    맞춤형으로 지도하는 현장형 멘토링.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Timeline -->
+              <div class="space-y-4">
+                <p class="text-xs text-slate-400">
+                  타임라인 위에 마우스를 올려 상세 내용을 확인해보세요.
+                </p>
+                <ol class="relative border-l border-slate-700 pl-4 space-y-6">
+                  <li
+                    class="group timeline-item cursor-pointer"
+                    data-role="manufacturing"
+                    data-period="1996 ~ 2000"
+                    data-title="기아자동차 보상업무팀"
+                  >
+                    <div
+                      class="absolute -left-[9px] mt-1 h-4 w-4 rounded-full border-2 border-slate-700 bg-slate-900 group-hover:border-electricBlue group-hover:bg-electricBlue"
+                    ></div>
+                    <div
+                      class="rounded-xl border border-slate-700 bg-slate-900/60 p-3 group-hover:border-electricBlue/70 group-hover:bg-slate-900 transition-colors"
+                    >
+                      <p class="text-xs text-slate-400">1996 ~ 2000</p>
+                      <p class="text-sm font-medium">
+                        기아자동차 보상업무팀 &mdash; 제조 현장의 첫 출발
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="group timeline-item cursor-pointer"
+                    data-role="finance"
+                    data-period="2003 ~ 2014"
+                    data-title="ING LIFE 부지점장"
+                  >
+                    <div
+                      class="absolute -left-[9px] mt-1 h-4 w-4 rounded-full border-2 border-slate-700 bg-slate-900 group-hover:border-electricBlue group-hover:bg-electricBlue"
+                    ></div>
+                    <div
+                      class="rounded-xl border border-slate-700 bg-slate-900/60 p-3 group-hover:border-electricBlue/70 group-hover:bg-slate-900 transition-colors"
+                    >
+                      <p class="text-xs text-slate-400">2003 ~ 2014</p>
+                      <p class="text-sm font-medium">
+                        ING LIFE 부지점장 &mdash; 금융·보험 전략 경험
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="group timeline-item cursor-pointer"
+                    data-role="finance"
+                    data-period="2014 ~ 현재"
+                    data-title="(주)iFA 본부장"
+                  >
+                    <div
+                      class="absolute -left-[9px] mt-1 h-4 w-4 rounded-full border-2 border-slate-700 bg-slate-900 group-hover:border-electricBlue group-hover:bg-electricBlue"
+                    ></div>
+                    <div
+                      class="rounded-xl border border-slate-700 bg-slate-900/60 p-3 group-hover:border-electricBlue/70 group-hover:bg-slate-900 transition-colors"
+                    >
+                      <p class="text-xs text-slate-400">2014 ~ 현재</p>
+                      <p class="text-sm font-medium">
+                        (주)iFA 본부장 &mdash; 중소기업 정책자금 컨설팅
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="group timeline-item cursor-pointer"
+                    data-role="technology"
+                    data-period="2021 ~ 현재"
+                    data-title="유림산전 CTO / 연구소장"
+                  >
+                    <div
+                      class="absolute -left-[9px] mt-1 h-4 w-4 rounded-full border-2 border-slate-700 bg-slate-900 group-hover:border-electricBlue group-hover:bg-electricBlue"
+                    ></div>
+                    <div
+                      class="rounded-xl border border-slate-700 bg-slate-900/60 p-3 group-hover:border-electricBlue/70 group-hover:bg-slate-900 transition-colors"
+                    >
+                      <p class="text-xs text-slate-400">2021 ~ 현재</p>
+                      <p class="text-sm font-medium">
+                        유림산전 CTO / 기업부설연구소장 &mdash; AI 기반
+                        스마트공정 R&amp;D
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+                <div
+                  id="timeline-detail"
+                  class="mt-2 rounded-2xl border border-slate-700 bg-slate-900/80 p-4 text-xs text-slate-200 min-h-[88px]"
+                >
+                  타임라인 항목을 호버하면 상세 설명이 여기에 표시됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section
+          id="skills"
+          class="border-b border-slate-800 bg-slate-950/40"
+        >
+          <div class="max-w-5xl mx-auto px-4 py-12 sm:py-16">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <h2 class="text-xl sm:text-2xl font-semibold">
+                보유 역량 (Skills &amp; Expertise)
+              </h2>
+              <p class="text-xs text-slate-400">자격 · 기술 · 강점 분야</p>
+            </div>
+
+            <div
+              class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:items-start"
+            >
+              <!-- Certificates & qualifications -->
+              <div
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 space-y-4"
+              >
+                <h3 class="text-sm font-semibold text-slate-100">
+                  전문 자격
+                </h3>
+                <div class="grid gap-3 sm:grid-cols-2 text-xs">
+                  <div
+                    class="rounded-xl border border-slate-700 bg-slate-950/60 p-3"
+                  >
+                    <p class="font-medium text-slate-100">
+                      AFPK (공인재무설계사)
+                    </p>
+                    <p class="mt-1 text-slate-300">
+                      기업·개인의 재무 전략과 정책자금을 연계한 설계.
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-xl border border-slate-700 bg-slate-950/60 p-3"
+                  >
+                    <p class="font-medium text-slate-100">
+                      정책자금 실무 컨설턴트
+                    </p>
+                    <p class="mt-1 text-slate-300">
+                      중소기업 대상 자금 조달 및 운용 컨설팅.
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-xl border border-slate-700 bg-slate-950/60 p-3"
+                  >
+                    <p class="font-medium text-slate-100">
+                      기업 R&amp;D 지도사
+                    </p>
+                    <p class="mt-1 text-slate-300">
+                      R&amp;D 과제 기획, 수행, 성과 관리 지도.
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-xl border border-slate-700 bg-slate-950/60 p-3"
+                  >
+                    <p class="font-medium text-slate-100">
+                      기술 표준화·산업안전 관련 전문성
+                    </p>
+                    <p class="mt-1 text-slate-300">
+                      산업 현장의 안전·품질 기준 정립 및 컨설팅.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech & strength cards grid (Bento style) -->
+              <div
+                class="grid gap-3 sm:grid-cols-2 auto-rows-[minmax(120px,auto)]"
+              >
+                <div
+                  class="rounded-2xl border border-slate-700 bg-gradient-to-br from-electricBlue/20 via-slate-900 to-slate-950 p-4 flex flex-col justify-between"
+                >
+                  <div>
+                    <p class="text-xs text-slate-200 mb-1">기술 역량</p>
+                    <p class="text-sm font-semibold">
+                      데이터 기반 보고서 &amp; 의사결정
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-100/90">
+                    엑셀, PPT, 구글워크스페이스 상급 활용으로 정책자금 분석,
+                    R&amp;D 성과 리포트, 경영진 보고서 작성.
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/70 p-4 flex flex-col justify-between"
+                >
+                  <div>
+                    <p class="text-xs text-slate-400 mb-1">강점 분야</p>
+                    <p class="text-sm font-semibold">정책금융 &amp; R&amp;D</p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-300">
+                    정책자금, 보증·대출, R&amp;D 지원제도를 기업 성장 단계에 맞게
+                    설계하고 실행.
+                  </p>
+                </div>
+                <div
+                  class="rounded-2xl border border-slate-700 bg-slate-900/70 p-4 flex flex-col justify-between sm:col-span-2"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <div>
+                      <p class="text-xs text-slate-400 mb-1">
+                        AI · 스마트공학 융합
+                      </p>
+                      <p class="text-sm font-semibold">
+                        공정 데이터 분석 기반 AI 비즈니스
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-electricBlue/15 text-electricBlue text-xs font-semibold"
+                    >
+                      AI
+                    </span>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-300">
+                    공정 센서 데이터, 품질 데이터 등을 AI로 분석하여 금형 보호,
+                    공정 효율화, 예지 보전 등 실제 비즈니스 가치로 연결.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="border-b border-slate-800">
+          <div class="max-w-5xl mx-auto px-4 py-12 sm:py-16">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <h2 class="text-xl sm:text-2xl font-semibold">
+                Contact (협업 · 문의)
+              </h2>
+              <p class="text-xs text-slate-400">정책금융 · R&amp;D · AI 비즈니스</p>
+            </div>
+            <div
+              class="grid gap-4 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start"
+            >
+              <div
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 space-y-4"
+              >
+                <p class="text-sm text-slate-200">
+                  프로젝트·자금 조달·R&amp;D 전략 등 협업이 필요하신 경우 아래
+                  채널로 연락 부탁드립니다.
+                </p>
+                <dl class="space-y-3 text-sm">
+                  <div class="flex items-center justify-between gap-2">
+                    <div>
+                      <dt class="text-xs text-slate-400">Email</dt>
+                      <dd class="font-medium">petezone@naver.com</dd>
+                    </div>
+                    <button
+                      class="copy-btn inline-flex items-center gap-1 rounded-lg border border-slate-600 bg-slate-950/70 px-3 py-1.5 text-xs text-slate-100 hover:border-electricBlue/70 hover:text-electricBlue transition-colors"
+                      data-copy="petezone@naver.com"
+                    >
+                      복사
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <div>
+                      <dt class="text-xs text-slate-400">Kakao ID</dt>
+                      <dd class="font-medium">kjwzone</dd>
+                    </div>
+                    <button
+                      class="copy-btn inline-flex items-center gap-1 rounded-lg border border-slate-600 bg-slate-950/70 px-3 py-1.5 text-xs text-slate-100 hover:border-electricBlue/70 hover:text-electricBlue transition-colors"
+                      data-copy="kjwzone"
+                    >
+                      복사
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <div>
+                      <dt class="text-xs text-slate-400">Location</dt>
+                      <dd class="font-medium">경기도 용인시 수지구 풍덕천로</dd>
+                    </div>
+                  </div>
+                </dl>
+                <p id="copy-feedback" class="text-xs text-emerald-400 h-4"></p>
+              </div>
+
+              <div
+                class="rounded-2xl border border-slate-700 bg-slate-900/60 p-4 text-xs text-slate-300 space-y-3"
+              >
+                <p class="font-semibold text-slate-100">
+                  함께 할 수 있는 일들
+                </p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>제조 공정 데이터 기반 AI·스마트공장 고도화 기획</li>
+                  <li>중소·중견기업 정책자금 및 R&amp;D 지원 전략 수립</li>
+                  <li>AI 비즈니스 모델·기술경영(MOT) 교육 및 워크숍</li>
+                  <li>산업안전·기술 표준화 관점의 공정 컨설팅</li>
+                </ul>
+                <p class="pt-1 text-slate-400">
+                  간단한 기업 소개와 현재 고민하시는 지점을 함께 남겨주시면
+                  보다 정확한 논의가 가능합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="border-t border-slate-800 bg-slate-950/80">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <p class="text-xs text-slate-500">
+            © 2026 김종우. All rights reserved.
+          </p>
+          <p class="text-xs text-slate-500">
+            Built with HTML · Tailwind CSS · JavaScript
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./main.js" defer></script>
+  </body>
+</html>
+
